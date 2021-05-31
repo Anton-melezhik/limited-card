@@ -1,0 +1,15 @@
+.idea/*
+.git/*
+/bitrix/*
+!/bitrix/activities/custom/
+!/bitrix/templates/
+/desktop_app/*
+/upload/*
+.access.php
+.htaccess
+.gitconfig
+.viminfo
+web.config
+robots.txt
+php_errors.log
+ustat.php
