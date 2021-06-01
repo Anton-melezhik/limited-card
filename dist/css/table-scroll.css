@@ -1,0 +1,88 @@
+/*.overflow-hidden {
+	overflow: hidden;
+}*/
+
+.table-placeholder.state-hidden,
+.table-scroll.state-hidden {
+  display: none;
+}
+
+@keyframes placeholder {
+  0% { 
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.table-placeholder {
+  width: 100%;
+  height: 400px;
+  background-color: #f1f1f1;
+  animation: placeholder linear 2s infinite;
+}
+
+.table-scroll {
+    display: flex;
+    position: relative;
+}
+.table-scroll table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+.table-scroll td {
+    background-color: white;
+    height: 19px;
+}
+.table-scroll_fixed {
+    width: 605px;
+    flex-shrink: 0;
+    position: relative;
+}
+.table-scroll_scrolled {
+    overflow-x: scroll;
+}
+.table-scroll_scrolled td {
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 31px;
+}
+.table-scroll__button {
+	outline: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	border: none;
+	width: 50px;
+	padding: 0;
+	background-color: transparent;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity linear 300ms;
+}
+.table-scroll__button.state-active {
+	opacity: 1;
+	pointer-events: auto;	
+}
+.table-scroll__button[data-type="prev"] {
+	right: -50px;
+}
+.table-scroll__button[data-type="next"] {
+	right: 0;
+}
+.table-scroll__button img {
+	position: absolute;
+}
+.table-scroll__button[data-type="prev"] img {
+	left: 0;
+	transform: rotate(180deg);
+}
+.table-scroll__button[data-type="next"] img {
+	right: 0;
+}

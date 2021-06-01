@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title></title>
+                        <g id="Excel">
+                            <path d="M23.5,3H14V.5A.5.5,0,0,0,13.41,0l-13,2.5A.5.5,0,0,0,0,3V21a.5.5,0,0,0,.41.49l13,2.5h.09a.5.5,0,0,0,.5-.5V21h9.5a.5.5,0,0,0,.5-.5V3.5A.5.5,0,0,0,23.5,3ZM8.95,16.28a.5.5,0,0,1-.89.45L6.5,13.62,4.95,16.72a.5.5,0,0,1-.89-.45L5.94,12.5,4.05,8.72a.5.5,0,0,1,.89-.45L6.5,11.38,8.05,8.28a.5.5,0,0,1,.89.45L7.06,12.5ZM23,20H14V19h2.5a.5.5,0,0,0,.5-.5v-1a.5.5,0,0,0-.5-.5H14V16h2.5a.5.5,0,0,0,.5-.5v-1a.5.5,0,0,0-.5-.5H14V13h2.5a.5.5,0,0,0,.5-.5v-1a.5.5,0,0,0-.5-.5H14V10h2.5a.5.5,0,0,0,.5-.5v-1a.5.5,0,0,0-.5-.5H14V7h2.5a.5.5,0,0,0,.5-.5v-1a.5.5,0,0,0-.5-.5H14V4h9Z" style="fill:#ffffff"></path>
+                            <rect height="2" rx="0.5" ry="0.5" style="fill:#ffffff" width="4" x="18" y="5"></rect>
+                            <rect height="2" rx="0.5" ry="0.5" style="fill:#ffffff" width="4" x="18" y="8"></rect>
+                            <rect height="2" rx="0.5" ry="0.5" style="fill:#ffffff" width="4" x="18" y="11"></rect>
+                            <rect height="2" rx="0.5" ry="0.5" style="fill:#ffffff" width="4" x="18" y="14"></rect>
+                            <rect height="2" rx="0.5" ry="0.5" style="fill:#ffffff" width="4" x="18" y="17"></rect>
+                        </g>
+                    </svg>

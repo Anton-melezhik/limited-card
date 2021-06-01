@@ -1,0 +1,323 @@
+.my-debug {
+    display: none;
+}
+
+.item-month-day {
+    min-width: 25px;
+}
+
+.input-form-main {
+    padding: 5px;
+}
+
+
+.del-custom-row {
+    float: right;
+    font-weight: 700;
+    color: red;
+    cursor: pointer;
+}
+
+.table-scroll{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.highcharts-a11y-proxy-button {
+    display: none !important;
+}
+
+.highcharts-button {
+    display: none !important;
+}
+
+.red-block-table {
+    color: red;
+    background: #FFA1DA !important;
+}
+
+.red-block-table input {
+    color: red;
+}
+
+.block-error {
+    margin-bottom: 20px;
+    color: red;
+}
+
+.block-good {
+    margin-bottom: 20px;
+    color: green;
+}
+
+.transport-to {
+    display: none;
+}
+
+.limited-constant{
+    border-collapse: collapse;
+    color: #535b69;
+}
+
+.limited-constant th {
+    border: 1px solid #c6cdd3;
+    padding: 6px;
+}
+
+.limited-constant td {
+    border: 1px solid #c6cdd3;
+    padding: 6px;
+}
+
+/*.limited-constant tr:nth-child(even) {
+    background-color: #f1e0e0; фон четных строк
+}*/
+
+.limited-item tr:nth-child(even) td{
+    background-color: #f1f1f1;
+}
+
+
+.limited-item{
+    border-collapse: collapse;
+    color: #535b69;
+}
+
+.limited-item th {
+    border: 1px solid #c6cdd3;
+    padding: 6px;
+}
+
+.limited-item td {
+    border: 1px solid #c6cdd3;
+    padding: 6px;
+}
+.input-number {
+    background: none;
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.input-text-main {
+    width: 100%;
+    border: 1px solid #c6cdd3;
+    color: #535b69;
+    padding: 5px;
+    width: 50%;
+}
+
+.start-work, .end-work {
+    border: 1px solid #c6cdd3;
+    color: #535b69;
+    padding: 5px;
+    width: 50%;
+}
+
+
+.class-date {
+    border: 1px solid #c6cdd3;
+    color: #535b69;
+    padding: 5px;
+}
+
+.input-number::-webkit-outer-spin-button,
+.input-number::-webkit-inner-spin-button {
+    /*display: none;*/
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.show-month {
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.hide-month {
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.row-head-hide {
+    display: none;
+    /*background: #e0e016;*/
+    background: #535b69;
+}
+
+.card-add {
+    border-collapse: collapse;
+    width: 100%;
+    color: #535b69;
+}
+
+.card-add td {
+    width: 50%;
+    border: 1px solid #c6cdd3;
+    padding: 10px;
+}
+
+.button-footer{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Базовый контейнер табов */
+.tabs {
+    padding: 0px;
+    margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+    /*display: none;/
+    padding: 15px;
+    background: #fff;
+    /*border: 1px solid #ddd;*/
+}
+.tabs>section>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+.tabs>input {
+    /*display: none;
+    position: absolute;*/
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #ddd;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+}
+
+.tabs-ds {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #ddd;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+}
+
+.item-month-user {
+    cursor: pointer;
+}
+
+.tabs-ds:hover {
+    /*color: #888;*/
+    cursor: pointer;
+}
+
+.active-ds {
+    background: #fff;
+    color: #555;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+.tabs>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+    color: #555;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+    display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+    .tabs>label {
+        font-size: 0;
+    }
+    .tabs>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
+
+/*KTU*/
+
+.mont-fio, .mont-work, .mont-close {
+    display: inline-block;
+    padding: 5px;
+}
+
+.mont-fio, .mont-work {
+    width: 48%;
+}
+
+.mont-fio {
+    /*border-right: 1px solid black;*/
+}
+
+.mont-close{
+    width: 4%;
+    font-weight: 700;
+}
+
+.users-block-table {
+    min-height: 400px;
+    margin-top: 20px;
+}
+
+.item-mont:first-child {
+    /*border-bottom: none !important;*/
+}
+
+.item-mont {
+    border: 1px solid black;
+}

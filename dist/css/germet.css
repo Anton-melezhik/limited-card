@@ -1,0 +1,90 @@
+.day-time {
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.day-time-save {
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.mont-width {
+    width: 24%;
+    display: inline-block;
+}
+
+.mont-width input{
+    width: 90%;
+}
+
+.mont-fio {
+    width: 40%;
+}
+
+
+.mont-dog{
+    display: inline-block;
+    width: 29%;
+}
+
+.mont-width {
+    width: 13%;
+}
+
+.mont-work {
+    width: 11%;
+}
+
+
+.block-users-days {
+    list-style-type: none;
+    padding: 0px;
+    text-align: center;
+}
+
+.block-users-days li {
+    display: block;
+}
+
+.block-sum-orr-name-serv {
+    min-height: 56px;
+}
+
+.block-users-main {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.block-users-main li {
+    display: block;
+}
+
+.togle-users {
+    cursor: pointer;
+    padding: 2px;
+    text-align: center;
+    width: 10px;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.block-users-days, .block-users-main {
+    display: none;
+}
+
+.input-number-check {
+
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.show-work-time {
+    cursor: pointer;
+}
