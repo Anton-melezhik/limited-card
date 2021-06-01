@@ -83,8 +83,6 @@ if ($_REQUEST['DEAL_ID']>0) {
         if ($arRes = $dbRes->Fetch()) {
             $DEAL_ID=$arRes['ID'];
             $DEAL_NAME=$arRes['TITLE'];
-            $DEAL_START=$arRes['UF_CRM_1572341478'];
-            $DEAL_END=$arRes['UF_CRM_1572341492'];
             $deals_dogs=$arRes['UF_N_DOG_GER'];
         }
 
@@ -284,14 +282,6 @@ if ($_REQUEST['DEAL_ID']>0) {
                 <td><?=$users_array[$rp_id]?>  <input type="hidden" class="user-rp" value="<?=$rp_id;?>"></td>
             </tr>
             <tr>
-                <td>Дата начала (Договор) </td>
-                <td><?=$DEAL_START?> </td>
-            </tr>
-            <tr>
-                <td>Дата завершения (Договор) </td>
-                <td><?=$DEAL_END?> </td>
-            </tr>
-            <tr>
                 <td>Факт. дата начала работ </td>
                 <?/*<td><?=$date_start?></td>*/?>
                 <td><input type="date" class="start-work" value="<?=$date_start_for_table?>"> </td>
@@ -327,14 +317,6 @@ if ($_REQUEST['DEAL_ID']>0) {
                 <td><?=$users_array[$rp_id]?></td>
             </tr>
             <tr>
-                <td>Дата начала (Договор) </td>
-                <td><?=$DEAL_START?> </td>
-            </tr>
-            <tr>
-                <td>Дата завершения (Договор) </td>
-                <td><?=$DEAL_END?> </td>
-            </tr>
-            <tr>
                 <td>Факт. дата начала работ </td>
                 <td><?=$date_start?></td>
             </tr>
@@ -356,9 +338,11 @@ if ($_REQUEST['DEAL_ID']>0) {
         <?if ($responsible_roll && ($hour>=17 || $hour<12)) {?>
             <input type="button" href="#modal-user"  style="margin-bottom: 20px; float: left;" class="add-work-time ui-btn ui-btn-sm ui-btn-light-border ui-btn-round" value="Добавить работу">
         <?}?>
+        <?if (count($serv_time_ar)>0) {?>
         <div class="report-excel" style="float: right;">
             <button name="report-excel" value="report-excel" data-id="<?=$EL_ID?>" data-deal="<?=$DEAL_ID?>" style="border: none; cursor: pointer;" class="download-excel-button js-report-excel"></button>
         </div>
+        <?}?>
         <div style="clear: both;"> </div>
     </div>
     <?//}?>
@@ -376,8 +360,10 @@ if ($_REQUEST['DEAL_ID']>0) {
         $readonly_model="";
     }
     ?>
-    <div class="table-placeholder"></div>
-    <div class="table-scroll state-hidden">
+
+
+    <div <?if (count($serv_time_ar)==0) echo "style='display:none;'";?> class="table-placeholder"></div>
+    <div <?if (count($serv_time_ar)==0) echo "style='display:none;'";?> class="table-scroll state-hidden">
         <button class="table-scroll__button state-active" data-type="next">
             <img src="data:image/svg+xml;charset=US-ASCII,%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2042%2081%22%3E%3Cpath%20fill%3D%22%23535c69%22%20opacity%3D%220.3%22%20d%3D%22M40.024%2C0H42a0%2C0%2C0%2C0%2C1%2C0%2C0V81a0%2C0%2C0%2C0%2C1%2C0%2C0H40.977A40.977%2C40.977%2C0%2C0%2C1%2C0%2C40.024v0A40.024%2C40.024%2C0%2C0%2C1%2C40.024%2C0Z%22/%3E%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M20.2%2C31.91l8.014%2C8.576L20.2%2C49.061a0.762%2C0.762%2C0%2C0%2C0%2C0%2C1.026l1.563%2C1.672a0.647%2C0.647%2C0%2C0%2C0%2C.958%2C0l8.014-8.576h0L32.776%2C41a0.762%2C0.762%2C0%2C0%2C0%2C0-1.025L22.72%2C29.212a0.647%2C0.647%2C0%2C0%2C0-.958%2C0L20.2%2C30.885A0.762%2C0.762%2C0%2C0%2C0%2C20.2%2C31.91Z%22/%3E%3C/svg%3E%0A">
         </button>

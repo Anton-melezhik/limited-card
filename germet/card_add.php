@@ -10,7 +10,7 @@ global $USER;
 $USER_ID=$USER->GetID();
 if ($_REQUEST['DEAL_ID']) {
     //тут нужна проверка на дурака, что бы 2 раза не мог пользователь создать карту для объекта
-    $entity_data_class = ArtPobedaHelper::getHlClassByName('LimitedCardItem');
+    $entity_data_class = MyHelper::getHlClassByName('LimitedCardItem');
     $filter_first=array('UF_DEAL'=>$_REQUEST['DEAL_ID']);
     $rsData = $entity_data_class::getList(array(
         'order' => array('ID'=>'ASC'),
