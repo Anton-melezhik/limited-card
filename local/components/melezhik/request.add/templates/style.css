@@ -1,0 +1,143 @@
+.workarea-content-paddings {
+    overflow-x: visible !important;
+    min-height: 700px;
+}
+
+.logs-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #535b69;
+}
+
+.logs-table td {
+    /* width: 50%; */
+    border: 1px solid #c6cdd3;
+    padding: 10px;
+}
+
+.logs-table thead td {
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.elements-table {
+    border-collapse: collapse;
+    width: 100%;
+    color: #535b69;
+}
+
+.elements-table td {
+    /* width: 50%; */
+    border: 1px solid #c6cdd3;
+    padding: 10px;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* Style the close button */
+.topright {
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+.topright:hover {color: red;}
+
+.sum-price-row {
+    float: left;
+}
+
+.row-close {
+    float: right;
+    padding-left: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+.block-chek {
+    display: inline-block;
+    padding: 5px 13px;
+    border-radius: 3px;
+    /*background: deepskyblue;*/
+    cursor: pointer;
+    background: #e7e4e4;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.button-intr {
+    padding: 7px 15px;
+    border-radius: 5px;
+    /*background: deepskyblue;*/
+    cursor: pointer;
+    background: #e7e4e4;
+    color: #000;
+    border: 1px solid #000;
+}
+
+
+
+
+.block-chek.active{
+    background: deepskyblue;
+    color: #fff;
+}
+
+.check-line-input {
+    margin-top: 15px;
+    display: none;
+}
+
+.comment-main {
+    width: 100%;
+    height: 60px;
+}
+
+.comment-main ::placeholder {
+    color: red;
+    opacity: 1;
+}
